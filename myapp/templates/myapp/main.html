@@ -1,0 +1,38 @@
+{% extends 'myapp/layout.html' %}
+
+
+{% block title %} {{ title }} {% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorem doloribus illum iste maiores? Iure laboriosam maxime quos sed. Dolorum incidunt iusto laboriosam minima molestias pariatur possimus quidem reiciendis, voluptas?</p>
+        <button class="btn btn-danger">To page About</button>
+<!--        Some functionality in JINJA-->
+<!--        <p>{% filter upper %}<button class="btn btn-warning">To page About</button> {% endfilter %}</p>-->
+
+<!--        {% for value in values %}-->
+<!--            {% if value == "Main Page" %}-->
+<!--                {% filter upper %}-->
+<!--                <p>{{ value }}</p>-->
+<!--                {% endfilter %}-->
+<!--            {% endif %}-->
+<!--        {% endfor %}-->
+
+<!--        <p>Lower:  {% filter lower %}  {{ values }}  {% endfilter %}</p>-->
+<!--        <p>Upper:  {{ values | upper }}</p>-->
+
+
+<!--        {{ dictionary }}-->
+<!--        <p>{{ dictionary.car }}-->
+<!--        {{ dictionary.model }}-->
+<!--        {{ dictionary.age }}</p>-->
+
+
+<!--        {% for i in dictionary %}-->
+<!--            <p>{{ i }}</p>-->
+<!--        {% endfor %}-->
+
+    </div>
+{% endblock %}
