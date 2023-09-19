@@ -1,0 +1,25 @@
+{% extends 'myapp/layout.html' %}
+
+
+{% block title %}Add Article{% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>Add Article</h1>
+        <form method="post">
+            {% csrf_token %}<br>
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.full_text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+<!--            <input type="text" class="form-control" placeholder="Name of article"><br>-->
+<!--            <input type="text" class="form-control" placeholder="Anons of article"><br>-->
+<!--            <textarea class="form-control" placeholder="Text of article"></textarea><br>-->
+<!--            <input type="date" class="form-control" lang="fr-CA"><br>-->
+<!--            <input type="time" class="form-control"><br>-->
+            <button class="btn btn-success" type="submit">Add Article</button>
+        </form>
+    </div>
+{% endblock %}

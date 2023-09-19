@@ -20,13 +20,3 @@ def contacts(request):
     return render(request, "myapp/contacts.html")
 
 
-def test_1(request):
-    return render(request, "myapp/test_1.html")
-
-
-def test_2(request):
-    return render(request, "myapp/test_2.html")
-
-
-def test_3(request):
-    return render(request, "myapp/test_3.html")

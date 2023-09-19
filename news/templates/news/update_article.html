@@ -1,0 +1,20 @@
+{% extends 'myapp/layout.html' %}
+
+
+{% block title %}Update Article{% endblock %}
+
+
+{% block content %}
+    <div class="features">
+        <h1>Update Article</h1>
+        <form method="post">
+            {% csrf_token %}<br>
+            {{ form.title }}<br>
+            {{ form.anons }}<br>
+            {{ form.full_text }}<br>
+            {{ form.date }}<br>
+            <span>{{ error }}</span>
+            <button class="btn btn-success" type="submit">Update Article</button>
+        </form>
+    </div>
+{% endblock %}
